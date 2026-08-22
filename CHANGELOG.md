@@ -1,85 +1,179 @@
-# Changelog
+# 🚀 BillyFriend Version Checker
 
-All notable changes to **bf-versionchecker** will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows semantic versioning.
+> A lightweight FiveM resource that automatically checks GitHub for updates and reports the status directly in the server console.
 
 ---
 
-## [1.0.0] - 2026-08-22
+## 📦 Version `1.0.0`
 
-### Added
+**Released:** `August 22, 2026`
 
-* Initial release of **bf-versionchecker**
-* GitHub version checking
-* Automatic version detection from `fxmanifest.lua`
-* Current version display
-* Latest version display
-* Automatic update detection
-* GitHub download link support
-* Colored FiveM console status messages
-* `UP TO DATE` status
-* `UPDATE AVAILABLE` status
-* `CHECK FAILED` status
-* HTTP error reporting
-* Invalid `version.json` detection
-* Semantic version comparison
-* Configurable GitHub repository
-* Configurable version check delay
+### 🟢 Added
 
-### Console
-
-Added a formatted console display showing:
-
-* Resource name
-* Installed version
-* Latest version
-* Update status
-* GitHub repository
-* Download link when an update is available
+* ✅ GitHub version checking
+* ✅ Automatic version detection from `fxmanifest.lua`
+* ✅ Current version display
+* ✅ Latest version display
+* ✅ Automatic update detection
+* ✅ GitHub download link support
+* ✅ Colored FiveM console messages
+* ✅ `UP TO DATE` status
+* ✅ `UPDATE AVAILABLE` status
+* ✅ `CHECK FAILED` status
+* ✅ HTTP error reporting
+* ✅ Invalid `version.json` detection
+* ✅ Semantic version comparison
+* ✅ Configurable GitHub repository
+* ✅ Configurable version check delay
 
 ---
 
-## [Unreleased]
+## 🎨 Console Improvements
 
-### Added
+The version checker includes a formatted console display:
 
-* Future changes will be documented here.
+```text
+============================================================
+              BILLYFRIEND RESOURCES
+                 VERSION CHECKER
+============================================================
+ Resource     : bf-versionchecker
+ Installed    : v1.0.0
+ Latest       : v1.0.0
 
-### Changed
+ Status       : UP TO DATE
 
-* Future changes will be documented here.
+ GitHub       : BillyFriendTTV/bf-versionchecker
+------------------------------------------------------------
+```
 
-### Fixed
+### Status Colors
 
-* Future fixes will be documented here.
-
-### Removed
-
-* Future removals will be documented here.
+| Status                | Color  | Meaning                                |
+| --------------------- | ------ | -------------------------------------- |
+| 🟢 `UP TO DATE`       | Green  | Resource is running the latest version |
+| 🟡 `UPDATE AVAILABLE` | Yellow | A newer version is available           |
+| 🔴 `CHECK FAILED`     | Red    | Version check could not be completed   |
 
 ---
 
-## Version Format
+## 🔄 Version Comparison
 
-Versions use the following format:
+The version checker supports semantic versioning.
 
-`MAJOR.MINOR.PATCH`
+```text
+MAJOR.MINOR.PATCH
+```
 
 Example:
 
-`1.2.3`
+```text
+1.2.3
+```
 
-Where:
+### 🔵 MAJOR
 
-* **MAJOR** - Major breaking changes
-* **MINOR** - New features and improvements
-* **PATCH** - Bug fixes and small changes
+Breaking changes or major rewrites.
+
+```text
+1.0.0 → 2.0.0
+```
+
+### 🟣 MINOR
+
+New features and improvements.
+
+```text
+1.0.0 → 1.1.0
+```
+
+### 🟢 PATCH
+
+Bug fixes and small changes.
+
+```text
+1.0.0 → 1.0.1
+```
 
 ---
 
-## Release History
+## 🛠️ Configuration
 
-| Version | Date       | Status          |
-| ------- | ---------- | --------------- |
-| `1.0.0` | 2026-08-22 | Initial Release |
+GitHub repository settings can be configured inside `server.lua`:
+
+```lua
+local GITHUB_USER = "BillyFriendTTV"
+local GITHUB_REPO = "bf-versionchecker"
+local GITHUB_BRANCH = "main"
+
+local VERSION_FILE = "version.json"
+
+local CHECK_DELAY = 5000
+```
+
+---
+
+## 🌐 GitHub
+
+**Repository**
+
+`BillyFriendTTV/bf-versionchecker`
+
+**Version File**
+
+`version.json`
+
+Example:
+
+```json
+{
+    "version": "1.0.0",
+    "download": "https://github.com/BillyFriendTTV/bf-versionchecker/releases"
+}
+```
+
+---
+
+# 📋 Unreleased
+
+> 🚧 Changes currently being developed.
+
+### 🟢 Added
+
+* Future features will be listed here.
+
+### 🟡 Changed
+
+* Future improvements will be listed here.
+
+### 🔴 Fixed
+
+* Future bug fixes will be listed here.
+
+### ⚫ Removed
+
+* Future removals will be listed here.
+
+---
+
+# 📜 Release History
+
+|   Version  | Release Date |      Status     |
+| :--------: | :----------: | :-------------: |
+| 🟢 `1.0.0` | `2026-08-22` | Initial Release |
+
+---
+
+## 💡 Development
+
+Developed by **BillyFriendTTV**
+
+> Built for FiveM developers and server owners.
+
+---
+
+### ⭐ Support
+
+If you find this resource useful, consider giving the repository a ⭐ on GitHub.
+
+**Thank you for using BillyFriend Resources!**
