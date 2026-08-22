@@ -3,6 +3,6 @@ game 'gta5'
 
 author 'BillyFriend'
 description 'BillyFriend Resource Version Checker'
-version '0.0.1'
+version '0.0.2'
 
 server_script 'server.lua'
